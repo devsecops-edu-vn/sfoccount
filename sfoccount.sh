@@ -320,9 +320,9 @@ yacc_bison_total=$yacc_bison_count0
 
 TOTAL_FILES_LANGS=`expr $ada_total + $assembly_total + $awk_total + $bash_total + $c_total + $cpp_total + \
                         $cshell_total + $cobol_total + $csharp_total + $expect_total + $fortran_total + $go_total + \
-						$haskell_total + $java_total + $lex_flex_total + $lisp_scheme_total + $modula3_total + \
-						$node_javascript_total + $objectivec_total + $pascal_total + $perl_total + $php_total + \
-						$python_total + $ruby_total + $rust_total + $sed_total + $sql_total + $tcl_total + $yacc_bison_total`
+			$haskell_total + $java_total + $lex_flex_total + $lisp_scheme_total + $modula3_total + \
+			$node_javascript_total + $objectivec_total + $pascal_total + $perl_total + $php_total + \
+			$python_total + $ruby_total + $rust_total + $sed_total + $sql_total + $tcl_total + $yacc_bison_total`
 
 ###############################################################################
 
