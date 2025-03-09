@@ -21,7 +21,8 @@
 #  3. awk (.awk)
 #  4. Bourne shell and variants (.sh)
 
-#  5. C (.c, .h, Makefile) - Tui thêm .h, Makefile
+#  5. C (.c, .h, Makefile) - Tui thêm Makefile
+#  --> bỏ .h ra do không biết là của C hay C++
 
 #  6. C++ (.C, .cpp, .cxx, .cc)
 #  7. C shell (.csh)
@@ -97,10 +98,9 @@ bash_total=$bash_count0
 #  5. C (.c, .h, Makefile)
 
 c_count0=$(find $1 -type f -name "*.c"      | wc -l)
-c_count1=$(find $1 -type f -name "*.h"      | wc -l)
-c_count2=$(find $1 -type f -name "Makefile" | wc -l)
+c_count1=$(find $1 -type f -name "Makefile" | wc -l)
 
-c_total=`expr $c_count0 + $c_count1 + $c_count2`
+c_total=`expr $c_count0 + $c_count1`
 
 ###############################################################################
 
