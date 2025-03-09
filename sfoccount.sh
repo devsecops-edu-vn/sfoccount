@@ -30,7 +30,7 @@
 # 10. Expect (.exp)
 # 11. Fortran (.f)
 
-# 12. Go (.go) - Tui thêm 
+# 12. Go (.go, .mod) - Tui thêm 
 
 # 13. Haskell (.hs) as of version 2.11
 # 14. Java (.java)
@@ -160,7 +160,9 @@ fortran_total=$fortran_count0
 
 go_count0=$(find $1 -type f -name "*.go" | wc -l)
 
-go_total=$go_count0
+go_count1=$(find $1 -type f -name "*.mod" | wc -l)
+
+go_total=`expr $go_count0 + $go_count1`
 
 ###############################################################################
 
